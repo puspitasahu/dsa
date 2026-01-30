@@ -6,6 +6,7 @@ public class SlidingWindowBF{
         int k=3;
         slideWindow(nums,k);
     }
+    //TC = O(N_K)*K = O(NK - K*k)=O(NK)
     private static void slideWindow(int[] nums,int k){
         int m = nums.length-k;//7-3=4
         for(int i=0;i<=m;i++){
